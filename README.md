@@ -1,38 +1,30 @@
-# Welcome to your Lovable project
+# OleTide Website
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+Website built with TanStack Start, React, TypeScript, and Tailwind CSS.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Install dependencies and start the local development server:
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+bun install
+bun run dev
 ```
 
 ## Deploy to Cloudflare Pages
 
-Connect the GitHub repository to Cloudflare Pages and use:
+Configure the Cloudflare Pages project with:
 
-- **Build command:** `npm run build`
+- **Build command:** `bun run build`
 - **Build output directory:** `dist`
 
-The Vite build uses Nitro's Cloudflare Pages preset, and `wrangler.jsonc` defines the Pages output directory and compatibility settings.
+The Vite build uses Nitro's Cloudflare Pages preset. `wrangler.jsonc` contains the Pages output directory and compatibility settings.
 
-## Built with
+To preview the Pages build locally, run `bun run preview:cloudflare`.
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+## Scripts
+
+- `bun run dev` — start the development server
+- `bun run build` — create a production Cloudflare Pages build
+- `bun run test` — run the test suite
+- `bun run deploy` — deploy `dist` to Cloudflare Pages with Wrangler
