@@ -21,6 +21,15 @@ npm i
 npm run dev
 ```
 
+## Deploy to Cloudflare Pages
+
+Connect the GitHub repository to Cloudflare Pages and use:
+
+- **Build command:** `npm run build`
+- **Build output directory:** `dist`
+
+The Vite build uses Nitro's Cloudflare Pages preset, and `wrangler.jsonc` defines the Pages output directory and compatibility settings.
+
 ## Built with
 
 - TanStack Start
